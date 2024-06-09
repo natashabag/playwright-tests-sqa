@@ -9,7 +9,7 @@ Group Project for SQA
 Make sure you have the following installed on your machine:
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
-- [npm](https://www.npmjs.com/) (version 6 or higher) or [yarn](https://yarnpkg.com/)
+- [npm](https://www.npmjs.com/) (version 6 or higher)
 
 ### Installation
 
@@ -21,13 +21,8 @@ Make sure you have the following installed on your machine:
 2. Install dependencies:
 
    ```sh
-   Copy code
    npm install
     ```
-
-# or
-
-yarn install
 
 3. Install Playwright and its browsers:
    ```sh

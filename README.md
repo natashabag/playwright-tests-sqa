@@ -1,6 +1,5 @@
-# playwright-tests-sqa
-
-Group Project for SQA
+# Group Project for Software Quality Associates with Playwright
+This project is designed to design test suite for [SQA](https://softwarequalityassociates.com/). 
 
 ## Getting Started
 

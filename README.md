@@ -20,33 +20,39 @@ Make sure you have the following installed on your machine:
    ```
 2. Install dependencies:
 
-```sh
-Copy code
-npm install
- ```
+   ```sh
+   Copy code
+   npm install
+    ```
 
 # or
 
 yarn install
 
 3. Install Playwright and its browsers:
+   ```sh
    npx playwright install
+   ```
 
 ### Running Tests
 
-To run the tests, use the following command:
-npx playwright test
+1. To run the tests, use the following command:
+   ```sh
+   npx playwright test
+   ```
 
-To run a specific test file:
-npx playwright test src/tests/example.test.ts
+3. To run a specific test file:
+   ```sh
+   npx playwright test src/tests/example.test.ts
+   ```
 
 ### Contributing
 
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix:
-   git checkout -b feature-name
+   ```shgit checkout -b feature-name```
 3. Commit your changes:
-   git commit -m "Description of your changes"
+   ```sh git commit -m "Description of your changes" ```
 4. Push to the branch:
-   git push origin feature-name
+   ```sh git push origin feature-name ```
 5. Create a Pull Request on GitHub.

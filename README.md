@@ -49,4 +49,4 @@ Make sure you have the following installed on your machine:
    ```sh git commit -m "Description of your changes" ```
 4. Push to the branch:
    ```sh git push origin feature-name ```
-5. Create a Pull Request on GitHub.
+5. Create a Pull Request on GitHub

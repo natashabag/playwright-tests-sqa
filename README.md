@@ -42,7 +42,7 @@ Make sure you have the following installed on your machine:
 
 ### Contributing
 
-1. Fork the repository.
+1. Fork the repository
 2. Create a new branch for your feature or bugfix:
    ```shgit checkout -b feature-name```
 3. Commit your changes:

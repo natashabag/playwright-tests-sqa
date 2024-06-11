@@ -1,5 +1,9 @@
-# Group Project for Software Quality Associates with Playwright
-This project is designed to design test suite for [SQA](https://softwarequalityassociates.com/). 
+# Group Project for Software Quality Associates
+## We are using Playwright and Typescript
+
+This project is aimed to design test suite for [SQA](https://softwarequalityassociates.com/). 
+The project is done by [STU](https://www.skool.com/stu) members.
+Everything but contact us form will be automated. Please, do not automate the contact us form for now to avoid spamming. 
 
 ## Getting Started
 
@@ -43,10 +47,13 @@ Make sure you have the following installed on your machine:
 ### Contributing
 
 1. Fork the repository
-2. Create a new branch for your feature or bugfix:
+2. Create a new branch for your feature:
    ```shgit checkout -b feature-name```
 3. Commit your changes:
    ```sh git commit -m "Description of your changes" ```
 4. Push to the branch:
    ```sh git push origin feature-name ```
 5. Create a Pull Request on GitHub.
+
+### If you have any questions:
+Please, contact [Natasha](https://github.com/natashabag). My email is natalia.bagramian@gmail.com and here is my [LinkedIn Page](https://www.linkedin.com/in/natalia-bagramian/)

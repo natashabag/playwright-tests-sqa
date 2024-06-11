@@ -48,11 +48,11 @@ Make sure you have the following installed on your machine:
 
 1. Fork the repository
 2. Create a new branch for your feature:
-   ```shgit checkout -b feature-name```
+   ```git checkout -b feature-name```
 3. Commit your changes:
-   ```sh git commit -m "Description of your changes" ```
+   ```git commit -m "Description of your changes" ```
 4. Push to the branch:
-   ```sh git push origin feature-name ```
+   ```git push origin feature-name ```
 5. Create a Pull Request on GitHub.
 
 ### If you have any questions:

@@ -1,20 +1,33 @@
 import { test, expect } from "@playwright/test";
 import { STUPage } from "../pages/stu-page";
-import { ServicesPage } from "../pages/services-page";
 
 test.describe("STU Page", () => {
   let stuPage: STUPage;
-  let servicesPage: ServicesPage;
 
   test.beforeEach(async ({ page }) => {
-    servicesPage = new ServicesPage(page);
-    await servicesPage.openHomePage();
-
     stuPage = new STUPage(page);
+    await stuPage.openStuURL();
   });
 
   test("should open STU", async ({ page }) => {
-    await stuPage.clickSTUButton();
     await stuPage.verifySTUPage();
+  });
+
+  test("should display 4 buttons", async ({ page }) => {
+    await stuPage.verifyJoinNowButtons();
+  });
+  test("should click Join Now Button One", async ({ page }) => {
+    await stuPage.clickJoinNowTopButton();
+    await page.pause();
+    await stuPage.verifySTUSkoolPage();
+  });
+  test("should click Join Now Button Two", async ({ page }) => {
+    await page.pause();
+    await stuPage.clickJoinNowButtonTwo();
+    await stuPage.verifySTUSkoolPage();
+  });
+  test("should click Join Now Button Three", async ({ page }) => {
+    await stuPage.clickJoinNowButtonThree();
+    await stuPage.verifySTULiteSkoolPage();
   });
 });

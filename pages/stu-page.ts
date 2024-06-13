@@ -65,7 +65,7 @@ export class STUPage {
     await this.joinSkoolButton.click();
   }
 
-  // Click Image:
+  // Image Methods:
   async clickImage() {
     await this.image.scrollIntoViewIfNeeded();
     await this.image.waitFor({ state: "visible" });

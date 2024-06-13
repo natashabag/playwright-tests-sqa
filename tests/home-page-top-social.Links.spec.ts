@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test.describe("Home Page Top Social Links Tests", () => {
   // Set a higher timeout for the entire test suite
-  test.setTimeout(300000); // 5 minutes
+  test.setTimeout(120000); // 2 minutes
 
   test.beforeEach(async ({ page }) => {
     await page.goto("https://softwarequalityassociates.com/", {

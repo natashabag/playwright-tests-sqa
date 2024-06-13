@@ -13,21 +13,39 @@ test.describe("STU Page", () => {
     await stuPage.verifySTUPage();
   });
 
-  test("should display 4 buttons", async ({ page }) => {
+  test("should display 4 'join now' buttons", async ({ page }) => {
     await stuPage.verifyJoinNowButtons();
   });
-  test("should click Join Now Button One", async ({ page }) => {
+  test("should click join now top button and open STU page", async ({
+    page,
+  }) => {
     await stuPage.clickJoinNowTopButton();
-    await page.pause();
     await stuPage.verifySTUSkoolPage();
   });
-  test("should click Join Now Button Two", async ({ page }) => {
-    await page.pause();
-    await stuPage.clickJoinNowButtonTwo();
+  test("should click join STU button and open STU page", async ({ page }) => {
+    await stuPage.clickjoinStuButton();
     await stuPage.verifySTUSkoolPage();
   });
-  test("should click Join Now Button Three", async ({ page }) => {
-    await stuPage.clickJoinNowButtonThree();
+  test("should click join now button from STU section and open STU page", async ({
+    page,
+  }) => {
+    await stuPage.clickJoinNowStuButton();
+    await stuPage.verifySTUSkoolPage();
+  });
+  test("should click join now Stu Lite Button and open STU Lite page", async ({
+    page,
+  }) => {
+    await stuPage.clickJoinNowStuLiteButton();
     await stuPage.verifySTULiteSkoolPage();
+  });
+  test("should click join skool button and open STU page", async ({ page }) => {
+    await stuPage.clickjoinSkoolButton();
+    await stuPage.verifySTUSkoolPage();
+  });
+  test("should open and close image", async ({ page }) => {
+    await stuPage.clickImage();
+    await stuPage.verifyCloseButtonDisplayed();
+    await stuPage.closeImage();
+    await stuPage.verifyCloseButtonNotDisplayed();
   });
 });
